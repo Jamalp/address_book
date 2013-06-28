@@ -44,6 +44,16 @@ get '/'
   db.close
   erb :new_person
 
+get '/contacts/:name' do
+  @name = params[:name]
+  db = PG.connect(:dbname => 'address_book', host => 'localhost')
+  sql = "select * from contacts where first = #{name}"
+  @contact = db.exec(sql).first
+  db.close
+
+  erb :contact
+end
+
 
 
   # executing SQL code.
