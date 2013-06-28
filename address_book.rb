@@ -39,6 +39,10 @@ db = PG.connect(:dbname => 'address_book',
 sql =  "insert into contacts(first, last, age, gender, dtgd, phone) VALUES ('#{@first}', '#{@last}', #{@age}, '#{@gender}', #{@dtgd}, '#{@phone}')"
 db.exec(sql)
 
+db.close
+
+db = PG.connect(:dbname => 'address_book',
+                :host => 'localhost')
 show =  db.exec("select * from contacts")
  show.each do |row|
   puts row
