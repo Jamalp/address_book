@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+    <body>
+      <ul>
+      <h2>we should see some contacts</h2>
+
+      <% @contacts.each do |contact| %>
+     <li>
+      <a href="/contacts/<%= contact['first'] %>">
+        <%= contact['first'] %>
+        </a>
+      </li>
+      <% end %>
+    </ul>
+    <a href="/contacts/form">Add a new contact </a>
+    </body>
+</html>
+
