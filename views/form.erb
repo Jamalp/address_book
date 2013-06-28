@@ -1,9 +1,32 @@
 <form>
-  <input type="text" value="first">
+
+  <%=   "hey girl, what's yo first name??"
+      @first = gets.chomp %>
+
+  <input type="text" value="@first">
+
+  <%=   "hey girl, what's yo last name??"
+@last = gets.chomp %>
+
   <input type="text" value="last">
+
+<%=  "hey girl hey, give me your age. Ain't lookin for no Jail Bait"
+@age = gets.chomp %>
+
   <input type="text" value="age">
+
+  <%=  "hey girl hey..hey. No judgement, but whats your gender?"
+  @gender = gets.chomp %>
   <input type="text" value="gender">
+
+  <%=  "Yo, I'm really lookin for someone who can get down, is that you? Tell me thats true and not false."
+  @dtgd = gets.chomp %>
   <input type="text" value="dtgd">
+  <%=  "Aight cool cool, You're lookin good, throw me yo numbah"
+@phone = gets.chomp %>
   <input type="text" value="phone">
-  <button>Submit</button>
+
 </form>
+<button>Submit</button>
+
+ <%= "PS.....The back of yo head is ridiculous!" %>
