@@ -1,0 +1,9 @@
+<p><a href="/new_address">Add A New Contact</a></p>
+<h1>Address Book:</h1>
+<ul>
+<% @names.each do |first, value|  %>
+<li>
+  <a href='/address/<%= first["first"] %>'><%= first["first"].capitalize %></a>
+</li>
+<% end %>
+</ul>
