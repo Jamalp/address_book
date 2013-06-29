@@ -8,7 +8,7 @@
 
       <% @contacts.each do |contact| %>
      <li>
-      <a href="/contacts/<%= contact['first'] %>">
+      <a href="/contacts/<%=contact['id']%>">
         <%= contact['first'] %>
         </a>
       </li>

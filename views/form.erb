@@ -1,32 +1,26 @@
-<form>
+<html>
+  <head>
+    <title>Add a Friend</title>
+  </head>
+  <body>
+    <form action ="/contacts" method="post">
+      <label for="first">hey girl, what's yo first name?" </label><br>
+      <input type="text" name="first" autofocus><br>
 
-  <%=   "hey girl, what's yo first name??"
-      @first = gets.chomp %>
+      <label for="first">hey girl, what's yo last name??</label><br>
+      <input type="text" name="last" autofocus><br>
 
-  <input type="text" value="@first">
+      <label for="first">hey girl hey, give me your age. Ain't lookin for no Jail Bait </label><br>
+      <input type="number" name="age" autofocus><br>
 
-  <%=   "hey girl, what's yo last name??"
-@last = gets.chomp %>
+      <label for="first">hey girl hey..hey. No judgement, but whats your gender? </label><br>
+      <input type="text" name="gender" autofocus><br>
 
-  <input type="text" value="last">
+      <label for="first">Yo, I'm really lookin for someone who can get down, is that you? Tell me thats true and not false. </label><br>
+      <input type="text" name="dtgd" autofocus><br>
 
-<%=  "hey girl hey, give me your age. Ain't lookin for no Jail Bait"
-@age = gets.chomp %>
-
-  <input type="text" value="age">
-
-  <%=  "hey girl hey..hey. No judgement, but whats your gender?"
-  @gender = gets.chomp %>
-  <input type="text" value="gender">
-
-  <%=  "Yo, I'm really lookin for someone who can get down, is that you? Tell me thats true and not false."
-  @dtgd = gets.chomp %>
-  <input type="text" value="dtgd">
-  <%=  "Aight cool cool, You're lookin good, throw me yo numbah"
-@phone = gets.chomp %>
-  <input type="text" value="phone">
-
-</form>
-<button>Submit</button>
-
- <%= "PS.....The back of yo head is ridiculous!" %>
+      <label for="first">Aight cool cool, You're lookin good, throw me yo numbah </label><br>
+      <input type="text" name="phone" autofocus><br>
+    </form>
+  </body>
+</html>
